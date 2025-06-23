@@ -4,14 +4,14 @@ AGENT_PY = textwrap.dedent("""
     from google.adk.agents import Agent
     
     def get_weather(city: str) -> dict:
-        """Retrieves the current weather report for a specified city."""
+        '''Retrieves the current weather report for a specified city.'''
         if city.lower() == "new york":
             return {"status": "success", "report": "The weather in New York is sunny with a temperature of 25 degrees Celsius (77 degrees Fahrenheit)."}
         else:
             return {"status": "error", "error_message": f"Weather information for '{city}' is not available."}
     
     def get_current_time(city: str) -> dict:
-        """Returns the current time in a specified city."""
+        '''Returns the current time in a specified city.'''
         import datetime
         from zoneinfo import ZoneInfo
         if city.lower() == "new york":

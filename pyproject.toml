@@ -2,7 +2,9 @@
 name = "adk-cli"
 version = "0.1.0"
 description = "Google ADK CLI - Scaffold and deploy Google ADK projects."
-authors = ["Josemi Hernandez <josemihdezgarcia@gmail.com>"]
+authors = [
+  { name = "Josemi Hernandez", email = "josemihdezgarcia@gmail.com" }
+]
 dependencies = [
     "ruff>=0.12.0",
     "typer",
@@ -15,3 +17,6 @@ adk-cli = "adk_cli.main:app"
 
 [tool.uv]
 # Optional: add uv-specific config here 
+
+[tool.setuptools.packages.find]
+include = ["adk_cli*"] 
