@@ -1,16 +1,16 @@
-# adk-cli
+# adk-cli 🚀
 
 A modern CLI tool to scaffold, develop, and deploy [Google ADK](https://google.github.io/adk-docs/) (Agent Development Kit) projects in Python.
 
-## Features
-- Quickly scaffold a new ADK agent project with best practices
-- Generates agent, runner, .env, Streamlit chat, tests, and deployment files
-- Supports [uv](https://github.com/astral-sh/uv) for fast dependency management
-- Built-in deploy command for Google Cloud Run
-- Pre-configured with [ruff](https://docs.astral.sh/ruff/) for linting
-- Installable as a CLI tool: `adk-cli`
+## ✨ Features
+- ⚡ Quickly scaffold a new ADK agent project with best practices
+- 🛠️ Generates agent, runner, .env, Streamlit chat, tests, and deployment files
+- 🚄 Supports [uv](https://github.com/astral-sh/uv) for fast dependency management
+- ☁️ Built-in deploy command for Google Cloud Run
+- 🧹 Pre-configured with [ruff](https://docs.astral.sh/ruff/) for linting
+- 🖥️ Installable as a CLI tool: `adk-cli`
 
-## Installation
+## 📦 Installation
 
 ### From PyPI (recommended)
 Once published, you can install globally:
@@ -28,7 +28,7 @@ Or, for development mode:
 pip install -e .
 ```
 
-## Usage
+## 🚀 Usage
 
 ### Scaffold a new project
 ```bash
@@ -52,7 +52,7 @@ python runner.py
 streamlit run streamlit_app/app.py
 ```
 
-## Project Structure
+## 🗂️ Project Structure
 ```
 myproject/
 ├── agent.py
@@ -71,14 +71,14 @@ myproject/
 └── ...
 ```
 
-## Development
+## 🛠️ Development
 - The CLI is implemented in the `adk_cli` Python package.
 - Entry point is defined in `pyproject.toml` as `adk-cli`.
 - Uses [Typer](https://typer.tiangolo.com/) for CLI logic.
 - To test locally, use `pip install -e .` and run `adk-cli` from anywhere.
 
-## Contributing
+## 🤝 Contributing
 PRs and issues welcome! Please lint with `ruff` and follow best practices for Python packaging and CLI design.
 
-## License
+## �� License
 Apache 2.0 
